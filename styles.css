@@ -1,0 +1,72 @@
+/*
+Copyright 2024, Cyril Monkewitz
+This file is part of "Virtual Tunable Keyboard (VTK)".
+VTK is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License (./gpl-3.0.txt) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+VTK is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with Foobar. If not, see <https://www.gnu.org/licenses/>.
+*/
+body, html {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	text-align: center;
+	font-family: monospace;
+	font-size: 1.25rem;
+}
+#keyboard {
+	cursor: pointer;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	min-width: 336px;
+	min-height: 223px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background: black;
+	/*background: url('KEYBOARD.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 100% auto;*/
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+	touch-action: none;
+}
+#clean {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:64px;
+	height:64px;
+	background: url('reload.png');
+	cursor: grabbing;
+	user-select: none;
+	touch-action: none;
+}
+#buttonWrapper {
+	position:absolute;
+	left:0;
+	top:0;
+	user-select: none;
+	touch-action: none;
+}
+.temperamentButton {
+	position: relative;
+	float: left;
+	color: white;
+	font-weight: bold;
+	padding:2px 8px;
+	margin:4px;
+	background-color: #315e94;
+	border-radius: 8px;
+	cursor: grabbing;
+	user-select: none;
+	touch-action: none;
+}
